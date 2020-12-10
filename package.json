@@ -1,5 +1,5 @@
 {
-  "name": "project-2-starter",
+  "name": "track-finder-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,17 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathanjwatson/project-2-starter.git"
+    "url": "git+https://github.com/204039643/Track-Finder-App"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonathanjwatson/project-2-starter/issues"
+    "url": "https://github.com/204039643/Track-Finder-App/issues"
   },
-  "homepage": "https://github.com/jonathanjwatson/project-2-starter#readme",
+  "homepage": "https://github.com/204039643/Track-Finder-App#readme",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "bulma": "^0.9.1",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "handlebars": "^4.7.6",
