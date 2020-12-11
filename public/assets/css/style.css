@@ -17,7 +17,7 @@ img {
 
 #search {
   width: 375px;
-  height: 50px;
+  height: 52px;
 }
 
 body {
@@ -26,8 +26,4 @@ body {
 
 i {
   margin-left: 0px;
-}
-
-button {
-  height: 50px;
 }
