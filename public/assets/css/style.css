@@ -9,6 +9,13 @@ h2 {
   font-family: "Libre Baskerville", serif;
 }
 
+.navbar-end {
+  float: left;
+  z-index: 9999;
+  overflow: visible;
+  padding-right: 150px;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -20,10 +27,16 @@ img {
   height: 52px;
 }
 
+label {
+  font-size: 30px;
+  font-family: "Libre Baskerville", serif;
+}
+
 body {
   text-align: center;
 }
 
-i {
-  margin-left: 0px;
+footer {
+  background-color: paleturquoise;
+  padding: 30px;
 }
