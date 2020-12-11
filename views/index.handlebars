@@ -1,8 +1,8 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    <a class="navbar-item">
+      <img src="https://webstockreview.net/images/track-clipart.jpg" width="" height=""> <strong>Track Finder</strong>
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -19,47 +19,55 @@
       </a>
 
       <a class="navbar-item">
-        Documentation
+        Add a Track
       </a>
+        <a class="navbar-item">
+        Update a Track
+      </a>
+    </div>
 
-      <div class="navbar-item has-dropdown is-hoverable">
+    <div class="navbar-end">
+      <div class="navbar-item">
+            <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+          <a class="navbar-item" href="https://www.runnersworld.com/">
+            Runners World
           </a>
-          <a class="navbar-item">
-            Jobs
+          <a class="navbar-item" href="https://mckirdytrained.com/">
+            McKirdyTrained
           </a>
-          <a class="navbar-item">
-            Contact
+          <a class="navbar-item" href="https://www.mcmillanrunning.com/">
+            McMillan Running Calculator
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
+                    <a class="navbar-item" href="https://runsmartproject.com/calculator/">
+            Jack Daniels' VDOT
           </a>
+
         </div>
       </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
         </div>
       </div>
     </div>
   </div>
 </nav>
 
-<h1>Track Finder</h1>
+<div>
+<h1> Track Finder</h1>
+<h2 class="subtitle">Find a running track near you!</h2>
 <h2 class="subtitle">Go straight, turn left</h2>
 <img id="multiple-runners" src="/assets/images/multiple-runners.png" alt="stick figure runners"/>
+</div>
+<br>
+<div class="field">
+  <label class="label is-large">City</label>
+  <div class="control has-icons-right">
+    <input class="input is-large" type="input" placeholder="Search" id="search">
+    <span class="icon is-small is-right">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>

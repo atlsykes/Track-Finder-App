@@ -16,3 +16,16 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+#search {
+  width: 375px;
+  height: 50px;
+}
+
+body {
+  text-align: center;
+}
+
+i {
+  size: 20px;
+}
