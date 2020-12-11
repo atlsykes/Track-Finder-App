@@ -1,8 +1,33 @@
 h1 {
   font-family: "Faster One", cursive;
-
+  font-size: 100px;
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search {
+  width: 375px;
+  height: 50px;
+}
+
 body {
+  text-align: center;
+}
+
+i {
+  margin-left: 0px;
+}
+
+button {
+  height: 50px;
 }
