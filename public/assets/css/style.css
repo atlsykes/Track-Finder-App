@@ -6,9 +6,7 @@ h1 {
 
 h2 {
   text-align: center;
-}
-body {
-  background-color: whitesmoke;
+  font-family: "Libre Baskerville", serif;
 }
 
 img {
@@ -27,5 +25,9 @@ body {
 }
 
 i {
-  size: 20px;
+  margin-left: 0px;
+}
+
+button {
+  height: 50px;
 }
