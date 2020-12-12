@@ -35,6 +35,10 @@ module.exports = (sequelize, DataTypes) => {
           isIn: [["standard", "non-standard"]],
         },
       },
+      details: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       createdAt: {
         type: DataTypes.DATE,
         defaultValue: sequelize.literal("NOW()"),
