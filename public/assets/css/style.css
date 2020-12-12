@@ -25,22 +25,19 @@ label {
   font-family: "Libre Baskerville", serif;
 }
 
-body {
+/* body {
   text-align: center;
-}
+} */
 
 footer {
   background-color: paleturquoise;
   padding: 30px;
+  text-align: center;
 }
 
-/* add track css */
+/* new-track.handlebars css */
 #header-add-track {
   padding: 20px;
-}
-
-#track-image {
-  border-radius: 8px;
 }
 
 .select {
@@ -56,13 +53,14 @@ footer {
   font-family: "Libre Baskerville", serif;
   font-size: 20px;
   padding: 10px;
+  margin: 20px;
 }
 
 /* form on add-track-handlebars */
 .control,
 .select {
   margin: 20px;
-  align-items: left;
+  text-align: left;
 }
 
 #track-type {
@@ -71,9 +69,9 @@ footer {
 }
 
 #track-image {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
+  border-radius: 8px;
 }
 
 /* all the pop-up css, lines 77-113 */
