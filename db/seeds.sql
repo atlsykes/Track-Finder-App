@@ -1,7 +1,9 @@
 use track_db;
  
 insert into tracks (name,address,city,state,zipCode,trackType)
-values ('test track 1','1313 Mockingird Lane','Marietta','GA',30060,'standard'),
- ('test track 2','1111 Main Peachtree Blvd','Kennesaw','GA','30144','standard'),
- ('test track 3','5555 Atlernate Peachtree Blvd','Kennesaw','GA','30144','standard');
+values ('Kennesaw Mountain High School','1898 Kennesaw Due West Rd NW','Kennesaw','GA',30152,'standard'),
+ ('Sprayberry High School','2525 Sandy Plains Rd','Marietta','GA','30066','standard'),
+ ('Kell High School','4770 Lee Waters Rd','Marietta','GA','30066','standard');
+
+
 
