@@ -34,7 +34,7 @@ footer {
   padding: 30px;
 }
 
-/* add track css targeters */
+/* add track css */
 #header-add-track {
   padding: 20px;
 }
@@ -43,9 +43,14 @@ footer {
   border-radius: 8px;
 }
 
-input is-focused {
-  width: 375px;
-  height: 52px;
+.input is-focused {
+  /* width: 375px;
+  height: 52px; */
+  margin: 20px !important;
+}
+
+.select {
+  align-items: left;
 }
 
 button {
