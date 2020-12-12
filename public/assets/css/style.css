@@ -9,13 +9,6 @@ h2 {
   font-family: "Libre Baskerville", serif;
 }
 
-.navbar-end {
-  float: left;
-  z-index: 9999;
-  overflow: visible;
-  padding-right: 150px;
-}
-
 img {
   display: block;
   margin-left: auto;
