@@ -63,15 +63,15 @@ footer {
   text-align: left;
 }
 
-#track-type {
-  margin: 20px;
-  size: 200%;
-}
-
 #track-image {
   height: 100%;
   vertical-align: middle;
   border-radius: 8px;
+}
+
+/* button to open modal */
+#track-type {
+  margin: 20px;
 }
 
 /* all the pop-up css, lines 77-113 */
@@ -80,8 +80,6 @@ footer {
   visibility: hidden;
   position: absolute;
   z-index: 1000;
-  /* top: 0;
-  left: 0; */
   background-color: white;
   border: 3px solid black;
   width: 40%;
@@ -99,13 +97,15 @@ footer {
 .popup-content {
   /*Hides pop-up content when there is no "active" class */
   visibility: hidden;
+  margin: 10px;
+  padding: 5px;
 }
 
 .popup-content.active {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
 }
-
+/* closing the modal */
 .close {
   background-color: lightseagreen;
   border-radius: 12px;
