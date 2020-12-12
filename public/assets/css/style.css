@@ -47,14 +47,22 @@ footer {
   align-items: left;
 }
 
-button {
+/* button to add track on add-track.handlebars */
+#add-track {
   float: left;
   background-color: purple;
   color: whitesmoke;
   border-radius: 8px;
 }
 
-input,
-select {
+/* form on add-track-handlebars */
+.control,
+.select {
   margin: 20px;
+  align-items: left;
+}
+
+#track-type {
+  margin: 20px;
+  size: 200%;
 }

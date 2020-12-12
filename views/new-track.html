@@ -86,7 +86,7 @@
     <section class="hero is-dark is-gradient">
       <div class="hero-body" id="header-add-track">
         <div class="container">
-          <h1>Add a Track</h1>
+          <h1 class="title is-1">Add a Track</h1>
           <h2 class="subtitle">
             Don't see your local track on the list? Add it here!
           </h2>
@@ -109,7 +109,9 @@
               <option>Standard</option>
               <option>Non-standard</option>
             </select>
-          </div>
+            
+          </div> <button class="is-large" id="track-type"><i class="fas fa-question"></i></button>
+          
           <div class="control">
             <input class="input is-focused" type="text" placeholder="Street Address">
           </div>
@@ -175,7 +177,7 @@
           <div class="control">
             <input class="input is-focused" type="text" placeholder="Availability, e.g. M - F, 4 - 6pm">
           </div>
-          <button>Add Track</button>
+          <button id="add-track">Add Track</button>
         </div>
     </div>
     <footer>
