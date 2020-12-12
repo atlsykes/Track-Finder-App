@@ -66,3 +66,9 @@ footer {
   margin: 20px;
   size: 200%;
 }
+
+#track-image {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
