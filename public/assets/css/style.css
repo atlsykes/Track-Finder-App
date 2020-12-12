@@ -49,10 +49,13 @@ footer {
 
 /* button to add track on add-track.handlebars */
 #add-track {
-  float: left;
+  /* float: left; */
   background-color: purple;
   color: whitesmoke;
-  border-radius: 8px;
+  border-radius: 12px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  padding: 10px;
 }
 
 /* form on add-track-handlebars */
@@ -73,15 +76,20 @@ footer {
   vertical-align: middle;
 }
 
+/* all the pop-up css, lines 77-113 */
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
-  position: relative;
-  background: #ffffff;
-  border: 3px solid #666666;
-  width: 50%;
-  height: 50%;
+  position: absolute;
+  z-index: 1000;
+  /* top: 0;
+  left: 0; */
+  background-color: white;
+  border: 3px solid black;
+  width: 40%;
+  height: 40%;
   left: 25%;
+  border-radius: 8px;
 }
 
 .popup-overlay.active {
@@ -98,4 +106,13 @@ footer {
 .popup-content.active {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
+}
+
+.close {
+  background-color: lightseagreen;
+  border-radius: 12px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  padding: 2%;
+  margin: 20px;
 }
