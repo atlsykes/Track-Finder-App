@@ -43,12 +43,6 @@ footer {
   border-radius: 8px;
 }
 
-.input is-focused {
-  /* width: 375px;
-  height: 52px; */
-  margin: 20px !important;
-}
-
 .select {
   align-items: left;
 }
@@ -58,4 +52,9 @@ button {
   background-color: purple;
   color: whitesmoke;
   border-radius: 8px;
+}
+
+input,
+select {
+  margin: 20px;
 }
