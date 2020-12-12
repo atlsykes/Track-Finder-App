@@ -56,6 +56,14 @@ footer {
   margin: 20px;
 }
 
+.add-track-div {
+  text-align: center;
+}
+
+#search-for-track {
+  text-align: center;
+}
+
 /* form on add-track-handlebars */
 .control,
 .select {
