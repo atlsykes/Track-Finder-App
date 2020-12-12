@@ -7,7 +7,7 @@ const {
 const db = require("./models");
 const app = express();
 
-const playerController = require("./controllers/playerController");
+const playerController = require("./controllers/trackController");
 
 const PORT = process.env.PORT || 8080;
 
@@ -48,8 +48,8 @@ app.get("/api/config", (req, res) => {
 app.post("/api/test", (req, res) => {
   console.log(req.body);
 });
-// db.sequelize.sync({ force: true }).then(() => {
-db.sequelize.sync().then(() => {
+db.sequelize.sync({ force: true }).then(() => {
+  // db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`App is running on http://localhost:${PORT}`);
   });

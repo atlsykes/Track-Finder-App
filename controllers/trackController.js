@@ -3,13 +3,13 @@ const router = express.Router();
 
 const db = require("../models");
 
-router.get("/players", (req, res) => {
-  db.Player.findAll({
-    include: db.Game,
+router.get("/add-track", (req, res) => {
+  db.track.findAll({
+    include: db.track,
   })
-    .then((allPlayers) => {
-      console.log(allPlayers);
-      res.render("players", { players: allPlayers });
+    .then((allTracks) => {
+      console.log(allTracks);
+      res.render("tracks", { players: allTracks });
     })
     .catch((err) => {
       console.log(err);
