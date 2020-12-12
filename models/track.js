@@ -34,6 +34,8 @@ module.exports = (sequelize, DataTypes) => {
         validate: {
           isIn: [["standard", "non-standard"]],
         },
+        details: DataTypes.STRING,
+        allowNull: false,
       },
       createdAt: {
         type: DataTypes.DATE,
