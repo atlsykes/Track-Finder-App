@@ -3,66 +3,58 @@ const router = express.Router();
 
 const db = require("../models");
 
-router.get("/players", (req, res) => {
-  db.Player.findAll({
-    include: db.Game,
-  })
-    .then((allPlayers) => {
-      console.log(allPlayers);
-      res.render("players", { players: allPlayers });
+router.get("/track", (req, res) => {
+  db.Track.findAll({})
+    .then((allTracks) => {
+      console.log(allTracks);
+      res.render("tracks", { tracks: allTracks });
     })
     .catch((err) => {
       console.log(err);
     });
 });
 
-router.get("/player/new", (req, res) => {
-  res.render("new-player");
+router.get("/track/new", (req, res) => {
+  res.render("new-track");
 });
 
-router.get("/players/:id/edit", (req, res) => {
-  db.Player.findOne({
+router.get("/tracks/:id/edit", (req, res) => {
+  db.Track.findOne({
     where: {
       id: req.params.id,
     },
-  }).then((foundPlayer) => {
-    console.log(foundPlayer.email);
-    res.render("edit-player", {
-      email: foundPlayer.email,
-      password: foundPlayer.password,
-      firstName: foundPlayer.firstName,
-      lastName: foundPlayer.lastName,
-      id: foundPlayer.id,
-    });
+  }).then((result) => {
+    console.log(result);
+    res.render("edit-track", result);
   });
 });
 
-router.post("/api/players", (req, res) => {
-  db.Player.create(req.body)
-    .then((newPlayer) => {
-      res.json(newPlayer);
+router.post("/api/tracks", (req, res) => {
+  db.Track.create(req.body)
+    .then((newTrack) => {
+      res.json(newTrack);
     })
     .catch((err) => {
       console.log(err);
     });
 });
 
-router.put("/api/players/:id", (req, res) => {
-  db.Player.update(req.body, {
+router.put("/api/tracks/:id", (req, res) => {
+  db.Track.update(req.body, {
     where: {
       id: req.params.id,
     },
   })
-    .then((updatedPlayer) => {
-      res.json(updatedPlayer);
+    .then((updatedTrack) => {
+      res.json(updatedTrack);
     })
     .catch((err) => {
       console.log(err);
     });
 });
 
-router.delete("/api/players/:id", (req, res) => {
-  db.Player.destroy({
+router.delete("/api/tracks/:id", (req, res) => {
+  db.Track.destroy({
     where: {
       id: req.params.id,
     },
