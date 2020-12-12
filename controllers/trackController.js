@@ -4,7 +4,7 @@ const router = express.Router();
 const db = require("../models");
 
 router.get("/add-track", (req, res) => {
-  db.track.findAll({
+  db.Track.findAll({
     include: db.track,
   })
     .then((allTracks) => {
@@ -16,12 +16,12 @@ router.get("/add-track", (req, res) => {
     });
 });
 
-router.get("/player/new", (req, res) => {
-  res.render("new-player");
+router.get("/track/new", (req, res) => {
+  res.render("new-track");
 });
 
-router.get("/players/:id/edit", (req, res) => {
-  db.Player.findOne({
+router.get("/track/:id/edit", (req, res) => {
+  db.Track.findOne({
     where: {
       id: req.params.id,
     },
