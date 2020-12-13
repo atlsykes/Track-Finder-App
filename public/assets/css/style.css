@@ -33,6 +33,11 @@ footer {
   background-color: paleturquoise;
   padding: 30px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  margin-top: 40px;
+  width: 100%;
 }
 
 /* new-track.handlebars css */
