@@ -33,3 +33,10 @@ footer {
   background-color: paleturquoise;
   padding: 30px;
 }
+
+.border {
+  border: solid black 1px;
+  padding: 1rem;
+  max-width: 17rem;
+  margin: 0 auto;
+}
