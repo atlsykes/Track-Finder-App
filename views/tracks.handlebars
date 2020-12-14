@@ -91,6 +91,7 @@
       <th>Street Address</th>
       <th>City</th>
       <th>Availability</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -101,15 +102,9 @@
       <td>{{address}}</td>
       <td>{{city}}</td>
       <td>{{details}}</td>
+      <td><button class="button is-primary is-light" id="update-btn">Update</button> <button class="button is-danger is-light" id="delete-btn">Delete</button></td>
     </tr>
-    {{/#each}}
-    <tr>
-      <td>Sprayberry High School</td>
-      <td>Standard</td>
-      <td>2525 Sandy Plains Rd</td>
-      <td>Marietta</td>
-      <td>Tue and Thurs 3pm-5pm</td>
-    </tr>
+    {{/each}}
   </tbody>
 </table>
-<img src="../public/assets/images/track-bottom-image.png" alt="track image" id="bottom-image" width="600px">
+<img src="../assets/images/track-bottom-image.png" alt="track image" id="bottom-image" width="600px">
