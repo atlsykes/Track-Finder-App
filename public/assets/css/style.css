@@ -1,5 +1,5 @@
 h1 {
-  font-family: "Faster One", cursive;
+  font-family: "Faster One", cursive !important;
   font-size: 100px;
   text-align: center;
 }
