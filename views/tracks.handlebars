@@ -86,6 +86,7 @@
 <table class="center table is-bordered is-hoverable">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Track Name</th>
       <th>Track Type</th>
       <th>Street Address</th>
@@ -97,12 +98,14 @@
   <tbody>
     {{#each tracks}}
     <tr>
+      <td>{{id}}</td>
       <td>{{name}}</td>
       <td>{{trackType}}</td>
       <td>{{address}}</td>
       <td>{{city}}</td>
       <td>{{details}}</td>
-      <td><button class="button is-primary is-light" id="update-btn">Update</button> <button class="button is-danger is-light" id="delete-btn">Delete</button></td>
+      <td><a href="/tracks/{{id}}/edit"><button class="button is-primary is-light update-track">Update</button></a>
+        <button class="button is-danger is-light delete-track" data-id="{{id}}">Delete</button></td>
     </tr>
     {{/each}}
   </tbody>
