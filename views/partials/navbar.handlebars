@@ -1,0 +1,36 @@
+{{!-- navbar from bulma --}}
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="https://webstockreview.net/images/track-clipart.jpg" id="navbar-pic"> <strong>Track Finder</strong>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Add Track
+      </a>
+    </div>
+    {{!-- media responsive navbar with working toggler on smaller screens --}}
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">More</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.runnersworld.com/">Runners World</a>
+            <a class="navbar-item" href="https://mckirdytrained.com/">McKirdyTrained</a>
+            <a class="navbar-item" href="https://www.mcmillanrunning.com/">McMillan Running Calculator</a>
+            <a class="navbar-item" href="https://runsmartproject.com/calculator/">Jack Daniels' VDOT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
