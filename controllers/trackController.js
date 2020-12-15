@@ -3,11 +3,11 @@ const router = express.Router();
 
 const db = require("../models");
 
-router.get("/track", (req, res) => {
+router.get("/tracks/:city/view", (req, res) => {
   db.Track.findAll({})
-    .then((allTracks) => {
-      console.log(allTracks);
-      res.render("tracks", { tracks: allTracks });
+    .then((cityTracks) => {
+      console.log(cityTracks);
+      res.render("tracks", { tracks: cityTracks });
     })
     .catch((err) => {
       console.log(err);
