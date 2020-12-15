@@ -4,6 +4,7 @@ $(document).ready(function () {
     const trackName = $("#name").val();
     const trackType = $("#trackType").val();
     const address = $("#address").val();
+    const city = $("#city").val();
     const state = $("#state").val();
     const zipCode = $("#zipCode").val();
     const availability = $("#availability").val();
