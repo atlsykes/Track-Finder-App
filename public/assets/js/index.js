@@ -1,3 +1,5 @@
+
+// code for the hamburger toggler functionality to work
 $(document).ready(function () {
 
     // Check for click events on the navbar burger icon
