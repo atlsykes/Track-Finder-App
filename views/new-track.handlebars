@@ -17,9 +17,9 @@
         </div>
         <div class="column">
           <div class="control">
-            <input class="input is-focused" type="text" placeholder="Track Name">
+            <input class="input is-focused" type="text" placeholder="Track Name" id="name">
           </div>
-          <div class="select">
+          <div class="select" id="trackType">
             <select>
               <option>Select Track Type</option>
               <option>Standard</option>
@@ -39,12 +39,12 @@
             </div>
           </div>
           <div class="control">
-            <input class="input is-focused" type="text" placeholder="Street Address">
+            <input class="input is-focused" type="text" placeholder="Street Address" id="address">
           </div>
           <div class="control">
-            <input class="input" type="text" placeholder="City">
+            <input class="input" type="text" placeholder="City" id="city">
           </div>
-          <div class="select is-focused">
+          <div class="select is-focused" id="state">
           <select>
             <option>Select State</option>
             <option value="AL">Alabama</option>
@@ -101,10 +101,10 @@
           </select>
           </div>
           <div class="control">
-            <input class="input is-focused" type="text" placeholder="Availability, e.g. M - F, 4 - 6pm">
+            <input class="input is-focused" type="text" placeholder="Availability, e.g. M - F, 4 - 6pm" id="availability">
           </div>
           <div class="control">
-            <input class="input is-focused" type="textarea" placeholder="Additional Info, e.g. stadiums, open bathrooms, etc.">
+            <input class="input is-focused" type="textarea" placeholder="Additional Info, e.g. stadiums, open bathrooms, etc." id="details">
           </div>
           <button id="add-track"><i class="fas fa-running"></i> Add Track <i class="fas fa-running"></i></button>
         </div>
