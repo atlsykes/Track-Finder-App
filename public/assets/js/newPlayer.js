@@ -1,31 +1,34 @@
 $(document).ready(function () {
-  console.log("My new player form will go here.");
-  console.log(
-    "I can write all my actual code in a javascript file. Not inside a handlebars file. "
-  );
 
-  $("#new-player").on("submit", function (e) {
+  $("#view-track").on("submit", function (e) {
     e.preventDefault();
-    const email = $("#email").val();
-    const password = $("#password").val();
-    const firstName = $("#firstName").val();
-    const lastName = $("#lastName").val();
-    console.log(email);
-    console.log(password);
-    console.log(firstName);
-    console.log(lastName);
+    const trackName = $("#name").val();
+    const trackType = $("#trackType").val();
+    const address = $("#address").val();
+    const state = $("#state").val();
+    const zipCode = $("#zipCode").val();
+    const availability = $("#availability").val();
+    console.log(trackName);
+    console.log(trackType);
+    console.log(address);
+    console.log(state);
+    console.log(zipCode)
+    console.log(availability);
 
     $.ajax({
-      method: "POST",
-      url: "/api/players",
+      method: "GET",
+      url: "/api/tracks/:id",
       data: {
-        email,
-        password,
-        firstName,
-        lastName,
+        name,
+        trackType,
+        address,
+        availability,
+        state,
+        zipCode,
+        availability,
       },
     }).then((response) => {
-      window.location.replace("/players");
+      window.location.replace("/tracks");
     });
   });
 });
