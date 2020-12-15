@@ -1,8 +1,18 @@
-@import './css/bulma';
+@import "./css/bulma";
 h1 {
   font-family: "Faster One", cursive;
   font-size: 100px;
   text-align: center;
+}
+
+#navbar-pic {
+  margin: 10px;
+}
+
+#navbar-more {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
 }
 
 h2 {
@@ -16,7 +26,7 @@ img {
   margin-right: auto;
 }
 
-#search {
+#input-city {
   width: 375px;
   height: 52px;
 }
@@ -26,14 +36,16 @@ label {
   font-family: "Libre Baskerville", serif;
 }
 
-/* body {
-  text-align: center;
-} */
-
 footer {
   background-color: paleturquoise;
   padding: 30px;
   text-align: center;
+  position: sticky;
+  bottom: 0;
+  height: auto;
+  margin-top: 40px;
+  width: 100%;
+  font-family: "Libre Baskerville", serif;
 }
 
 /* new-track.handlebars css */
@@ -131,4 +143,33 @@ footer {
 
 #bottom-image {
   margin-top: 15%;
+}
+
+#track-type-input,
+#availability-input {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#track-address-update,
+#track-name-update {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#update-track-div {
+  margin: 10px;
+}
+#save-track-columns {
+  margin: 20px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#mini-head-track-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }

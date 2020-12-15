@@ -10,4 +10,10 @@ $(document).ready(function () {
         $(".navbar-menu").toggleClass("is-active");
 
     });
+
+    $("#button-search").on("click", function () {
+        let city = $("#input-city").val();
+        console.log(city);
+        window.location.replace("/tracks/:city/view");
+    })
 });
