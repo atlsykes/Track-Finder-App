@@ -9,6 +9,12 @@ h1 {
   margin: 10px;
 }
 
+#navbar-more {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
+}
+
 h2 {
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -39,6 +45,7 @@ footer {
   height: auto;
   margin-top: 40px;
   width: 100%;
+  font-family: "Libre Baskerville", serif;
 }
 
 /* new-track.handlebars css */

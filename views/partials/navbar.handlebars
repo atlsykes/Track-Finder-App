@@ -20,17 +20,26 @@
     </div>
     {{!-- media responsive navbar with working toggler on smaller screens --}}
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">More</a>
-          <div class="navbar-dropdown">
+    <div class="dropdown is-right is-hoverable">
+      <div class="dropdown-trigger">
+        <button class="button is-medium" id="navbar-more" aria-haspopup="true" aria-controls="dropdown-menu4">
+          <span>More</span>
+          <span class="icon is-small">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
             <a class="navbar-item" href="https://www.runnersworld.com/">Runners World</a>
             <a class="navbar-item" href="https://mckirdytrained.com/">McKirdyTrained</a>
             <a class="navbar-item" href="https://www.mcmillanrunning.com/">McMillan Running Calculator</a>
             <a class="navbar-item" href="https://runsmartproject.com/calculator/">Jack Daniels' VDOT</a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
+  </div>
+</div>
+</div>
 </nav>

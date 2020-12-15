@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#update-track-button").on("submit", function (e) {
+  $("#save-track-button").on("submit", function (e) {
     e.preventDefault();
     const trackName = $("#name").val();
     const trackType = $("#trackType").val();
