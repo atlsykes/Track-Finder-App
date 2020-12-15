@@ -10,7 +10,8 @@ $(document).ready(function () {
 
     });
 
-    $("search").on("click", function () {
-
+    $("#button-search").on("click", function () {
+        let city = $("#input-city").val();
+        console.log(city);
     })
 });

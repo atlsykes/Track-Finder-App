@@ -15,7 +15,7 @@ img {
   margin-right: auto;
 }
 
-#search {
+#input-city {
   width: 375px;
   height: 52px;
 }
@@ -33,7 +33,7 @@ footer {
   background-color: paleturquoise;
   padding: 30px;
   text-align: center;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   height: auto;
   margin-top: 40px;
