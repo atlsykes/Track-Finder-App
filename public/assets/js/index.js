@@ -1,3 +1,4 @@
+
 // code for the hamburger toggler functionality to work
 $(document).ready(function () {
 
@@ -13,5 +14,6 @@ $(document).ready(function () {
     $("#button-search").on("click", function () {
         let city = $("#input-city").val();
         console.log(city);
+        window.location.replace("/tracks/:city/view");
     })
 });

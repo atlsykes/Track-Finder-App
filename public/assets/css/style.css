@@ -1,3 +1,4 @@
+@import "./css/bulma";
 h1 {
   font-family: "Faster One", cursive;
   font-size: 100px;
@@ -24,10 +25,6 @@ label {
   font-size: 30px;
   font-family: "Libre Baskerville", serif;
 }
-
-/* body {
-  text-align: center;
-} */
 
 footer {
   background-color: paleturquoise;
@@ -126,4 +123,13 @@ footer {
   font-size: 15px;
   padding: 2%;
   margin: 20px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bottom-image {
+  margin-top: 15%;
 }
