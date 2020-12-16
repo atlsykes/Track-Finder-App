@@ -2,23 +2,113 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"
+        integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../public/assets/css/bulma.css" />
+    <link rel="stylesheet" href="../../public/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="../../public/assets/js/singleTrack.js"></script>
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                source code will go here
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="https://webstockreview.net/images/track-clipart.jpg" width="" height="" />
+                <h1 class="title is-1">Track Finder</h1>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item"> Add Track </a>
+            </div>
+            <!-- {{!-- media responsive navbar with working toggler on smaller screens
+        --}} -->
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">More</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="https://www.runnersworld.com/">Runners World</a>
+                            <a class="navbar-item" href="https://mckirdytrained.com/">McKirdyTrained</a>
+                            <a class="navbar-item" href="https://www.mcmillanrunning.com/">McMillan Running
+                                Calculator</a>
+                            <a class="navbar-item" href="https://runsmartproject.com/calculator/">Jack Daniels' VDOT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-dark is-gradient">
+        <div class="hero-body" id="header-add-track">
+            <div class="container">
+                <h1 class="title is-1">Single Track View</h1>
+                <h2 class="subtitle">
+                    Is this your favorite track?
+                </h2>
+            </div>
         </div>
     </section>
+    <div class="container">
+        <br>
+        <div class="columns">
+            <div class="column is-one-thirds">
+                <div class="column">
+                    <ul class="border">{{trackName}}</ul>
+                    <ul class="border">{{trackType}} <button class="is-large" id="track-type"><i
+                                class="fas fa-edit"></i></button></ul>
+                    <ul class="border">{{address}}{{city}}{{state}}{{zipCode}}</ul>
+                    <ul class="border">Availability<button class="is-large" id="track-type"><i
+                                class="fas fa-edit"></i></button></ul>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="update-track-div">
+                            <button class="button is-medium"><i class="fas fa-edit"></i></button>
+                            <br>
+                            <br>
+                            <h3>Update Track</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="delete-track-div">
+                            <button class="button is-medium"><i class="fas fa-trash"></i></button>
+                            <br>
+                            <br>
+                            <h3>Delete Track</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-two-thirds">
+                <div class="column">Track map goes here</div>
+            </div>
+        </div>
+        <footer>
+            <ul>© Bambo Adeshiyan, Claude Hyppolite, Justin Sykes, Beth Presten</ul>
+            <ul>Georgia Tech Bootcamp, Class of 2021</ul>
+        </footer>
+        <script src="../public/assets/js/index.js"></script>
+        <script src="../public/assets/js/new-track.js"></script>
 </body>
 
 </html>
