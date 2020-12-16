@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // console.log("Hello World!")
     $("#track-type").click(function () {
         $(".popup-overlay, .popup-content").addClass("active");
         $(".close, .popup-overlay").on("click", function () {
@@ -9,13 +10,14 @@ $(document).ready(function () {
     $("#add-track").click(function (e) {
         e.preventDefault();
         const name = $("#name").val();
+        const trackType = $("#trackType").val();
         const address = $("#address").val();
         const city = $("#city").val();
         const state = $("#state").val();
-        // const zipCode = $("#zipCode").val();
-        const trackType = $("#trackType").val();
-        // const availability = $("#availability").val();
+        const zipCode = parseInt($("#zipCode").val());
         const details = $("#details").val();
+
+        console.log(zipCode);
 
         $.ajax({
             method: "POST",
@@ -25,13 +27,12 @@ $(document).ready(function () {
                 address,
                 city,
                 state,
-                // zipCode,
+                zipCode,
                 trackType,
-                // availability,
                 details,
             },
         }).then((response) => {
-            window.location.replace("/track/new");
+            window.location.replace("/api/tracks");
         });
     });
 });

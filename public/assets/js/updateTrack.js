@@ -6,20 +6,20 @@ $(document).ready(function () {
     const address = $("#address").val();
     const city = $("#city").val();
     const state = $("#state").val();
-    const zipCode = $("#zipCode").val();
-    const availability = $("#details").val();
+    // const zipCode = $("#zipCode").val();
+    const details = $("#details").val();
 
     $.ajax({
-      method: "PUT",
-      url: `/api/tracks/${id}`,
+      method: "POST",
+      url: `/api/tracks/`,
       data: {
         trackName,
         trackType,
         address,
         city,
         state,
-        zipCode,
-        availability,
+        // zipCode,
+        details,
       },
     }).then((response) => {
       window.location.replace("/tracks");
