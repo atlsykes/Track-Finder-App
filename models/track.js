@@ -25,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           isInt: true,
-          is: ["(^d{5}$)|(^d{9}$)|(^d{5}-d{4}$)"],
         },
       },
       trackType: {
