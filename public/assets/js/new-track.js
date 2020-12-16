@@ -18,7 +18,6 @@ $(document).ready(function () {
         const details = $("#details").val();
 
         // console.log(zipCode);
-        // console.log(typeof req.body.zipCode)
 
         $.ajax({
             method: "POST",
