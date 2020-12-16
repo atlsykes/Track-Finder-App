@@ -34,6 +34,9 @@ router.get("/tracks/:id/edit", (req, res) => {
 });
 
 router.post("/api/tracks", (req, res) => {
+  console.log(typeof req.body.zipCode);
+  console.log(typeof req.body.state);
+  console.log(typeof req.body.trackType);
   db.Track.create(req.body)
     .then((newTrack) => {
       res.json(newTrack);

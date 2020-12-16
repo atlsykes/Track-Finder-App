@@ -14,10 +14,11 @@ $(document).ready(function () {
         const address = $("#address").val();
         const city = $("#city").val();
         const state = $("#state").val();
-        const zipCode = parseInt($("#zipCode").val());
+        const zipCode = $("#zipCode").val();
         const details = $("#details").val();
 
-        console.log(zipCode);
+        // console.log(zipCode);
+        // console.log(typeof req.body.zipCode)
 
         $.ajax({
             method: "POST",
@@ -32,7 +33,7 @@ $(document).ready(function () {
                 details,
             },
         }).then((response) => {
-            window.location.replace("/api/tracks");
+            window.location.replace("/tracks");
         });
     });
 });
