@@ -1,8 +1,18 @@
-@import './css/bulma';
+@import "./css/bulma";
 h1 {
   font-family: "Faster One", cursive;
   font-size: 100px;
   text-align: center;
+}
+
+#navbar-pic {
+  margin: 10px;
+}
+
+#navbar-more {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
 }
 
 h2 {
@@ -16,7 +26,7 @@ img {
   margin-right: auto;
 }
 
-#search {
+#input-city {
   width: 375px;
   height: 52px;
 }
@@ -26,13 +36,104 @@ label {
   font-family: "Libre Baskerville", serif;
 }
 
-body {
-  text-align: center;
-}
-
 footer {
   background-color: paleturquoise;
   padding: 30px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  height: auto;
+  margin-top: 40px;
+  width: 100%;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* new-track.handlebars css */
+#header-add-track {
+  padding: 20px;
+}
+
+.select {
+  align-items: left;
+}
+
+/* button to add track on add-track.handlebars */
+#add-track {
+  /* float: left; */
+  background-color: purple;
+  color: whitesmoke;
+  border-radius: 12px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.add-track-div {
+  text-align: center;
+}
+
+#search-for-track {
+  text-align: center;
+}
+
+/* form on add-track-handlebars */
+.control,
+.select {
+  margin: 20px;
+  text-align: left;
+}
+
+#track-image {
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+/* button to open modal */
+#track-type {
+  margin: 20px;
+}
+
+/* all the pop-up css, lines 77-113 */
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 3px solid black;
+  width: 40%;
+  height: 40%;
+  left: 25%;
+  border-radius: 8px;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+  margin: 10px;
+  padding: 5px;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+/* closing the modal */
+.close {
+  background-color: lightseagreen;
+  border-radius: 12px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  padding: 2%;
+  margin: 20px;
 }
 
 .center {
@@ -42,4 +143,33 @@ footer {
 
 #bottom-image {
   margin-top: 15%;
+}
+
+#track-type-input,
+#availability-input {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#track-address-update,
+#track-name-update {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#update-track-div {
+  margin: 10px;
+}
+#save-track-columns {
+  margin: 20px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#mini-head-track-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
