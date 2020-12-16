@@ -6,7 +6,7 @@ $(document).ready(function () {
     const address = $("#address").val();
     const city = $("#city").val();
     const state = $("#state").val();
-    // const zipCode = $("#zipCode").val();
+    const zipCode = $("#zipCode").val();
     const details = $("#details").val();
 
     $.ajax({
@@ -18,7 +18,7 @@ $(document).ready(function () {
         address,
         city,
         state,
-        // zipCode,
+        zipCode,
         details,
       },
     }).then((response) => {
