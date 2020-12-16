@@ -13,7 +13,6 @@ $(document).ready(function () {
 
     $("#button-search").on("click", function () {
         let city = $("#input-city").val();
-        console.log(city);
-        window.location.replace("/tracks/:city/view");
+        window.location.replace("/tracks/" + city + "/view");
     })
 });

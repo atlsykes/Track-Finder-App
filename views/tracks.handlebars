@@ -1,11 +1,12 @@
 {{> navbar}}
 <h1>All Tracks</h1>
-<span class="tag is-info is-light is-large"><strong>{{city}}</strong></span>
+<h2><span class="tag is-info is-light is-large"><strong>Search results for: {{city}}</strong></span></h2>
 <br>
 <br>
 <table class="center table is-bordered is-hoverable">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Track Name</th>
       <th>Track Type</th>
       <th>Street Address</th>
@@ -17,12 +18,17 @@
   <tbody>
     {{#each tracks}}
     <tr>
+      <td>{{id}}</td>
       <td>{{name}}</td>
       <td>{{trackType}}</td>
       <td>{{address}}</td>
       <td>{{city}}</td>
       <td>{{details}}</td>
-      <td><button class="button is-primary is-light" id="update-btn">Update</button> <button class="button is-danger is-light" id="delete-btn">Delete</button></td>
+      <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-info is-hovered">
+            <i class="fas fa-edit"></i>
+          </button> <button class="button is-medium is-danger is-hovered delete-track" data-id="{{id}}">
+            <i class="fas fa-trash"></i>
+          </button></td>
     </tr>
     {{/each}}
   </tbody>
