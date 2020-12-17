@@ -5,6 +5,12 @@ h1 {
   text-align: center;
 }
 
+body {
+  background-image: url("https://i.gifer.com/1Im9.gif");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
 #navbar-pic {
   margin: 10px;
 }
