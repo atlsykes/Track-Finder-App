@@ -1,4 +1,8 @@
 @import "./css/bulma";
+.navbar {
+  background-color: #ffdd57;
+}
+
 h1 {
   font-family: "Faster One", cursive !important;
   font-size: 100px;
@@ -14,6 +18,9 @@ h1 {
   margin-right: 40px;
   padding: 20px;
   font-family: "Libre Baskerville", serif;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  background-color: #ffdd57;
 }
 
 h2 {
@@ -44,7 +51,7 @@ footer {
   position: sticky;
   bottom: 0;
   /* height: auto; */
-  margin-top: 20px;
+  margin-top: 15%;
   font-family: "Libre Baskerville", serif;
   color: white;
   font-size: 20px;
@@ -144,10 +151,7 @@ footer {
   margin-right: auto;
 }
 
-#bottom-image {
-  margin-top: 15%;
-}
-
+/* update track styling */
 #track-type-input,
 #availability-input {
   margin-top: 5%;
@@ -157,17 +161,12 @@ footer {
 
 #track-address-update,
 #track-name-update,
-#city-info {
-  border: 1px solid black;
-  background-color: white;
+#city-update {
   border-radius: 5px;
   padding: 5px;
   width: 300px;
 }
 
-#update-track-div {
-  margin: 10px;
-}
 #save-track-columns {
   margin: 20px;
   padding: 10px;
@@ -183,7 +182,7 @@ footer {
 
 .columns,
 #find-track-label {
-  background-color: darkgrey;
+  background-color: rgb(192, 188, 188);
   border-radius: 8px;
   padding: 8px;
 }
