@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "mysqlpassword1",
-=======
-    "password": "GeorgiaTech$$117",
->>>>>>> 1c172982ab39c6c6662d95234393e719aa7d5647
     "database": "track_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
