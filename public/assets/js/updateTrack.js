@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#save-track-button").on("submit", function (e) {
     e.preventDefault();
-    const trackName = $("#name").val();
+    const name = $("#name").val();
     const trackType = $("#trackType").val();
     const address = $("#address").val();
     const city = $("#city").val();
@@ -11,42 +11,10 @@ $(document).ready(function () {
 
     $.ajax({
       method: "PUT",
-      url: `/api/tracks/`,
-      data: {
-        trackName,
-        trackType,
-        address,
-        city,
-        state,
-        zipCode,
-        details,
-      },
-    }).then((response) => {
-      window.location.replace(`/tracks/${city}/view`);
-    });
-  });
-
-  $("#delete-track-button").on("submit", function (e) {
-    e.preventDefault();
-    const trackName = $("#name").val();
-    const trackType = $("#trackType").val();
-    const address = $("#address").val();
-    const city = $("#city").val();
-    const state = $("#state").val();
-    const zipCode = $("#zipCode").val();
-    const availability = $("#details").val();
-
-    $.ajax({
-      method: "DELETE",
       url: `/api/tracks/${id}`,
       data: {
-        trackName,
         trackType,
-        address,
-        city,
-        state,
-        zipCode,
-        availability,
+        details,
       },
     }).then((response) => {
       window.location.replace(`/tracks/${city}/view`);

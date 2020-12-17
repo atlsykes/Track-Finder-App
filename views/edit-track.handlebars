@@ -9,12 +9,12 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="container" id="update-track-container">
       <br>
-      <div class="columns">
+      <div class="columns" id="update-track-columns">
         <div class="column">
           <div class="control">
-            <ul id="trackNameUpdate">{{name}}</ul>
+            <ul id="track-name-update">{{name}}</ul>
           </div>
           
           <div class="control">
@@ -22,15 +22,14 @@
           </div>
         
           <div class="control">
-            <input class="input is-focused" type="text" placeholder="{{address}}" id="address">
+            <ul id="track-address-update">{{address}}</ul>
           </div>
           
           <div class="control">
             <input class="input is-focused" type="text" placeholder="{{availability}}" id="zipCode">
           </div>
 
-      <div class="columns" id="save-track-columns">
-      <div class="column">
+      <div class="column" id="save-track-columns">
           <div class="save-track-div">
             <button
               class="button is-medium is-success is-hovered"
@@ -43,30 +42,9 @@
             <h3>Save Track</h3>
           </div>
         </div>
-        <div class="column">
-          <div class="delete-track-div-on-update">
-            <button
-              class="button is-medium is-danger is-hovered"
-              id="delete-track-button"
-            >
-              <i class="fas fa-trash"></i>
-            </button>
-            <br />
-            <br />
-            <h3>Delete Track</h3>
-          </div>
-        </div>
-
-        </div>
-  
+        
       </div>
 
-
-
-        <div class="column">
-          MAP GOES HERE
-          <img src="/assets/images/cartoon-track.png" alt="400m track" id="track-image"/>
-        </div>
 </div>
 </div>
 {{> footer}}

@@ -155,13 +155,16 @@ footer {
 #availability-input {
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 50%;
 }
 
 #track-address-update,
 #track-name-update {
   border: 1px solid black;
+  background-color: white;
   border-radius: 5px;
   padding: 5px;
+  width: 300px;
 }
 
 #update-track-div {
@@ -180,6 +183,9 @@ footer {
   text-align: center;
 }
 
-.columns {
-  background-color: black;
+.columns,
+#find-track-label {
+  background-color: darkgrey;
+  border-radius: 8px;
+  padding: 8px;
 }
