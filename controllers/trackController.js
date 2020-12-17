@@ -29,7 +29,14 @@ router.get("/tracks/:id/edit", (req, res) => {
     },
   }).then((result) => {
     console.log(result);
-    res.render("edit-track", result);
+    res.render("edit-track", {
+      id: result.id,
+      name: result.name,
+      city: result.city,
+      trackType: result.trackType,
+      address: result.address,
+      availability: result.details,
+    });
   });
 });
 
@@ -57,6 +64,7 @@ router.put("/api/tracks/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
+      res.status(500).json(err);
     });
 });
 
