@@ -14,19 +14,29 @@
       <div class="columns" id="update-track-columns">
         <div class="column">
           <div class="control">
-            <ul id="track-name-update">{{name}}</ul>
+            <ul id="track-name-update">{{id}}. {{name}}</ul>
           </div>
+          <input type="hidden" value={{id}} id="track-id"/>
           
-          <div class="control">
-            <input class="input is-focused" type="text" placeholder="{{trackType}}" id="address">
+          <div class="select">
+            <select id="track-type-update">
+              <option value="">Select Track Type</option>
+              <option value="standard">standard</option>
+              <option value="non-standard">non-standard</option>
+            </select>           
           </div>
+
         
           <div class="control">
             <ul id="track-address-update">{{address}}</ul>
           </div>
+
+          <div class="control">
+            <ul id="city-update">{{city}}</ul>
+          </div>
           
           <div class="control">
-            <input class="input is-focused" type="text" placeholder="{{availability}}" id="zipCode">
+            <input class="input is-focused" type="text" placeholder="{{availability}}" id="details">
           </div>
 
       <div class="column" id="save-track-columns">

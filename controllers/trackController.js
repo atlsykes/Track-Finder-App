@@ -30,6 +30,7 @@ router.get("/tracks/:id/edit", (req, res) => {
   }).then((result) => {
     console.log(result);
     res.render("edit-track", {
+      id: result.id,
       name: result.name,
       city: result.city,
       trackType: result.trackType,
@@ -63,6 +64,7 @@ router.put("/api/tracks/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
+      res.status(500).json(err);
     });
 });
 

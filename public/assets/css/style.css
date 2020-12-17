@@ -5,12 +5,6 @@ h1 {
   text-align: center;
 }
 
-body {
-  background-image: url("https://i.gifer.com/1Im9.gif");
-  background-size: 100%;
-  background-repeat: repeat;
-}
-
 #navbar-pic {
   margin: 10px;
 }
@@ -43,7 +37,7 @@ label {
 }
 
 footer {
-  background-color: paleturquoise;
+  background-color: #f54c2f;
   padding: 30px;
   text-align: center;
   position: sticky;
@@ -140,6 +134,7 @@ footer {
   font-size: 15px;
   padding: 2%;
   margin: 20px;
+  color: white;
 }
 
 .center {
@@ -159,7 +154,8 @@ footer {
 }
 
 #track-address-update,
-#track-name-update {
+#track-name-update,
+#city-update {
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
@@ -183,17 +179,15 @@ footer {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .columns,
 #find-track-label {
   background-color: darkgrey;
   border-radius: 8px;
   padding: 8px;
-=======
+}
 .border {
   border: solid black 1px;
   padding: 1rem;
   max-width: 17rem;
   margin: 0 auto;
->>>>>>> 328e6586fb3e06c2cfc8fc54a5f0bb037b740409
 }
