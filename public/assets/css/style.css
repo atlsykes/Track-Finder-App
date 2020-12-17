@@ -1,6 +1,6 @@
 @import "./css/bulma";
 h1 {
-  font-family: "Faster One", cursive;
+  font-family: "Faster One", cursive !important;
   font-size: 100px;
   text-align: center;
 }
@@ -178,4 +178,11 @@ footer {
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.border {
+  border: solid black 1px;
+  padding: 1rem;
+  max-width: 17rem;
+  margin: 0 auto;
 }
