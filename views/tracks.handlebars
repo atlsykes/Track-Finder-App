@@ -1,26 +1,37 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{#each players}}
-            <h1>{{firstName}} {{lastName}}</h1>
-            <p>Reach me at: {{email}} or {{phone}}</p>
-            <button class="btn btn-danger delete-player" data-id="{{id}}">Delete</button>
-            <a href="/players/{{id}}/edit"><button class="btn btn-secondary">Edit</button></a>
-            {{/each}}
-        </div>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        $(".delete-player").on("click", function () {
-            const id = $(this).data("id");
-            $.ajax({
-                method: "DELETE",
-                url: `/api/players/${id}`
-            }).then(response => {
-                window.location.reload();
-            })
-        })
-    })
-</script>
+{{> navbar}}
+<h1>All Tracks</h1>
+<h2><span class="tag is-info is-light is-large"><strong>Search results for: {{city}}</strong></span></h2>
+<br>
+<br>
+<table class="center table is-bordered is-hoverable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Track Name</th>
+      <th>Track Type</th>
+      <th>Street Address</th>
+      <th>City</th>
+      <th>Availability</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each tracks}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{trackType}}</td>
+      <td>{{address}}</td>
+      <td>{{city}}</td>
+      <td>{{details}}</td>
+      <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-info is-hovered">
+            <i class="fas fa-edit"></i>
+          </button> <button class="button is-medium is-danger is-hovered delete-track" data-id="{{id}}">
+            <i class="fas fa-trash"></i>
+          </button></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<img src="/assets/images/track-bottom-image.png" alt="track image" id="bottom-image" width="600px">
+{{> footer}}
