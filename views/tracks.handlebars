@@ -24,15 +24,15 @@
       <td>{{address}}</td>
       <td>{{city}}</td>
       <td>{{details}}</td>
-      <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-info is-hovered">
+      <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-warning">
             <i class="fas fa-edit"></i></a>
-        </button> <button class="button is-medium is-danger is-hovered delete-track" data-id="{{id}}">
+        </button> <button class="button is-medium is-danger delete-track" data-id="{{id}}">
           <i class="fas fa-trash"></i>
         </button>
-        <a href="https://www.google.com/maps/place/Parkview+High+School"> </a><button
-          class="button is-medium is-success is-hovered track-directions" data-address="{{address}}">
+        <button class="button is-medium is-success track-directions" data-address="{{address}}" data-city="{{city}}" data-state="{{state}}">
           <i class="fas fa-map-marked"></i>
-        </button></td>
+        </button>
+      </td>
     </tr>
     {{/each}}
   </tbody>
