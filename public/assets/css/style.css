@@ -11,6 +11,7 @@ h1 {
 
 #navbar-more {
   margin: 20px;
+  margin-right: 40px;
   padding: 20px;
   font-family: "Libre Baskerville", serif;
 }
@@ -42,10 +43,11 @@ footer {
   text-align: center;
   position: sticky;
   bottom: 0;
-  height: auto;
-  margin-top: 40px;
-  width: 100%;
+  /* height: auto; */
+  margin-top: 20px;
   font-family: "Libre Baskerville", serif;
+  color: white;
+  font-size: 20px;
 }
 
 /* new-track.handlebars css */
@@ -155,7 +157,7 @@ footer {
 
 #track-address-update,
 #track-name-update,
-#city-update {
+#city-info {
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
