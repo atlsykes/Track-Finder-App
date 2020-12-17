@@ -10,7 +10,7 @@ $(document).ready(function () {
     const details = $("#details").val();
 
     $.ajax({
-      method: "POST",
+      method: "PUT",
       url: `/api/tracks/`,
       data: {
         trackName,
@@ -22,7 +22,7 @@ $(document).ready(function () {
         details,
       },
     }).then((response) => {
-      window.location.replace("/tracks");
+      window.location.replace(`/tracks/${city}/view`);
     });
   });
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
         availability,
       },
     }).then((response) => {
-      window.location.replace("/tracks");
+      window.location.replace(`/tracks/${city}/view`);
     });
   });
 });
