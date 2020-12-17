@@ -1,23 +1,55 @@
 $(document).ready(function () {
-  $("#edit-player").on("submit", function (e) {
+  $("#save-track-button").on("submit", function (e) {
     e.preventDefault();
-    const id = $(this).data("id");
-    const email = $("#email").val();
-    const password = $("#password").val();
-    const firstName = $("#firstName").val();
-    const lastName = $("#lastName").val();
+    const trackName = $("#name").val();
+    const trackType = $("#trackType").val();
+    const address = $("#address").val();
+    const city = $("#city").val();
+    const state = $("#state").val();
+    const zipCode = $("#zipCode").val();
+    const details = $("#details").val();
 
     $.ajax({
-      method: "PUT",
-      url: `/api/players/${id}`,
+      method: "POST",
+      url: `/api/tracks/`,
       data: {
-        email,
-        password,
-        firstName,
-        lastName,
+        trackName,
+        trackType,
+        address,
+        city,
+        state,
+        zipCode,
+        details,
       },
     }).then((response) => {
-      window.location.replace("/players");
+      window.location.replace("/tracks");
+    });
+  });
+
+  $("#delete-track-button").on("submit", function (e) {
+    e.preventDefault();
+    const trackName = $("#name").val();
+    const trackType = $("#trackType").val();
+    const address = $("#address").val();
+    const city = $("#city").val();
+    const state = $("#state").val();
+    const zipCode = $("#zipCode").val();
+    const availability = $("#details").val();
+
+    $.ajax({
+      method: "DELETE",
+      url: `/api/tracks/${id}`,
+      data: {
+        trackName,
+        trackType,
+        address,
+        city,
+        state,
+        zipCode,
+        availability,
+      },
+    }).then((response) => {
+      window.location.replace("/tracks");
     });
   });
 });

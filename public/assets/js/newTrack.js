@@ -1,31 +1,38 @@
 $(document).ready(function () {
-  console.log("My new player form will go here.");
-  console.log(
-    "I can write all my actual code in a javascript file. Not inside a handlebars file. "
-  );
-
-  $("#new-player").on("submit", function (e) {
+  // console.log("Hello World!")
+  $("#track-type").click(function () {
+    $(".popup-overlay, .popup-content").addClass("active");
+    $(".close, .popup-overlay").on("click", function () {
+      $(".popup-overlay, .popup-content").removeClass("active");
+    });
+  });
+  // name,address,city,state,zipCode,trackType,details (from seeds)
+  $("#add-track").click(function (e) {
     e.preventDefault();
-    const email = $("#email").val();
-    const password = $("#password").val();
-    const firstName = $("#firstName").val();
-    const lastName = $("#lastName").val();
-    console.log(email);
-    console.log(password);
-    console.log(firstName);
-    console.log(lastName);
+    const name = $("#name").val();
+    const trackType = $("#trackType").val();
+    const address = $("#address").val();
+    const city = $("#city").val();
+    const state = $("#state-name").val();
+    const zipCode = $("#zipCode").val();
+    const details = $("#details").val();
+
+    // console.log(zipCode);
 
     $.ajax({
       method: "POST",
-      url: "/api/players",
+      url: "/api/tracks",
       data: {
-        email,
-        password,
-        firstName,
-        lastName,
+        name,
+        address,
+        city,
+        state,
+        zipCode,
+        trackType,
+        details,
       },
     }).then((response) => {
-      window.location.replace("/players");
+      window.location.replace(`/tracks/${city}/view`);
     });
   });
 });
