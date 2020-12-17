@@ -1,6 +1,6 @@
 @import "./css/bulma";
 h1 {
-  font-family: "Faster One", cursive;
+  font-family: "Faster One", cursive !important;
   font-size: 100px;
   text-align: center;
 }
@@ -183,9 +183,17 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .columns,
 #find-track-label {
   background-color: darkgrey;
   border-radius: 8px;
   padding: 8px;
+=======
+.border {
+  border: solid black 1px;
+  padding: 1rem;
+  max-width: 17rem;
+  margin: 0 auto;
+>>>>>>> 328e6586fb3e06c2cfc8fc54a5f0bb037b740409
 }

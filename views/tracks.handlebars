@@ -1,6 +1,6 @@
 {{> navbar}}
 <h1>All Tracks</h1>
-<h2><span class="tag is-info is-light is-large"><strong>Search results for: {{city}}</strong></span></h2>
+<h2><span class="tag is-info is-light is-large"><strong>Search results for: {{tracks.0.city}}</strong></span></h2>
 <br>
 <br>
 <table class="center table is-bordered is-hoverable">
@@ -25,10 +25,14 @@
       <td>{{city}}</td>
       <td>{{details}}</td>
       <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-info is-hovered">
-            <i class="fas fa-edit"></i>
-          </button> <button class="button is-medium is-danger is-hovered delete-track" data-id="{{id}}">
-            <i class="fas fa-trash"></i>
-          </button></td>
+            <i class="fas fa-edit"></i></a>
+        </button> <button class="button is-medium is-danger is-hovered delete-track" data-id="{{id}}">
+          <i class="fas fa-trash"></i>
+        </button>
+        <a href="https://www.google.com/maps/place/Parkview+High+School"> </a><button
+          class="button is-medium is-success is-hovered track-directions" data-address="{{address}}">
+          <i class="fas fa-map-marked"></i>
+        </button></td>
     </tr>
     {{/each}}
   </tbody>
