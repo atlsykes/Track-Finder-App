@@ -9,6 +9,7 @@ $(document).ready(function () {
   // name,address,city,state,zipCode,trackType,details (from seeds)
   $("#add-track").click(function (e) {
     e.preventDefault();
+    e.stopImmediatePropagation();
     const name = $("#name").val();
     const trackType = $("#trackType").val();
     const address = $("#address").val();
