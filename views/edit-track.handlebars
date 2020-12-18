@@ -1,49 +1,47 @@
 {{> navbar}}
-    <section class="hero is-dark is-gradient">
-      <div class="hero-body" id="header-add-track">
-        <div class="container">
-          <h1 class="title is-1">Update This Track</h1>
-          <h2 class="subtitle">
-            Provide other fitness friends with up-to-date info!
-          </h2>
-        </div>
+<div class="content-wrapper">
+  <section class="hero is-dark is-gradient">
+    <div class="hero-body" id="header-add-track">
+      <div class="container">
+        <h1 class="title is-1">Update This Track</h1>
+        <h2 class="subtitle">
+          Provide other fitness friends with up-to-date info!
+        </h2>
       </div>
-    </section>
-    <div class="container" id="update-track-container">
-      <br>
-      <div class="columns" id="update-track-columns">
-        <div class="column">
-          <div class="control">
-            <input class="input is-focused" type="text"  placeholder="{{id}}. {{name}}" id="track-name-update" disabled>
-          </div>
-          <input type="hidden" value={{id}} id="track-id"/>
-          
-          <div class="select is-focused">
-            <select id="track-type-update">
-              <option value="">Select Track Type</option>
-              <option value="standard">standard</option>
-              <option value="non-standard">non-standard</option>
-            </select>           
-          </div>
+    </div>
+  </section>
+  <div class="container" id="update-track-container">
+    <br>
+    <div class="columns" id="update-track-columns">
+      <div class="column">
+        <div class="control">
+          <input class="input is-focused" type="text" placeholder="{{id}}. {{name}}" id="track-name-update" disabled>
+        </div>
+        <input type="hidden" value={{id}} id="track-id" />
 
-          <div class="control">
-            <input class="input is-focused" type="text" placeholder="{{address}}" id="track-address-update" disabled>
-          </div>
+        <div class="select is-focused">
+          <select id="track-type-update">
+            <option value="">Select Track Type</option>
+            <option value="standard">standard</option>
+            <option value="non-standard">non-standard</option>
+          </select>
+        </div>
 
-          <div class="control">
-            <input class="input is-focused" type="text" value={{city}} placeholder="{{city}}" id="city-update" disabled>
-          </div>
-          
-          <div class="control">
-            <input class="input is-focused" type="text" placeholder="{{availability}}" id="details">
-          </div>
+        <div class="control">
+          <input class="input is-focused" type="text" placeholder="{{address}}" id="track-address-update" disabled>
+        </div>
 
-      <div class="column" id="save-track-columns">
+        <div class="control">
+          <input class="input is-focused" type="text" value={{city}} placeholder="{{city}}" id="city-update" disabled>
+        </div>
+
+        <div class="control">
+          <input class="input is-focused" type="text" placeholder="{{availability}}" id="details">
+        </div>
+
+        <div class="column" id="save-track-columns">
           <div class="save-track-div">
-            <button
-              class="button is-large is-success is-hovered"
-              id="save-track-button"
-            >
+            <button class="button is-large is-success is-hovered" id="save-track-button">
               <i class="fas fa-save"></i>
             </button>
             <br />
@@ -51,10 +49,11 @@
             <h1="subtitle">Save Track</h3>
           </div>
         </div>
-        
+
       </div>
 
-</div>
+    </div>
+  </div>
 </div>
 {{> footer}}
 <script src="/assets/js/updateTrack.js"></script>
