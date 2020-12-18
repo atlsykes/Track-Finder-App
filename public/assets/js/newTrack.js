@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
   });
   // name,address,city,state,zipCode,trackType,details (from seeds)
-  $("#add-track").click(function (e) {
+  $("#save-new-track-button").click(function (e) {
     e.preventDefault();
     e.stopImmediatePropagation();
     const name = $("#name").val();
