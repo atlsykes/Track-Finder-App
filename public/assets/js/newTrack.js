@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // console.log("Hello World!")
-  $("#track-type").click(function () {
+  $("#track-type-button").click(function () {
     $(".popup-overlay, .popup-content").addClass("active");
     $(".close, .popup-overlay").on("click", function () {
       $(".popup-overlay, .popup-content").removeClass("active");
