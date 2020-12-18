@@ -1,19 +1,17 @@
 {{> navbar}}
-
-<section class="hero is-dark is-gradient">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title"> All tracks </h1>
-      {{!-- <h2 class="subtitle">Search results for: {{tracks.0.city}}</h2> --}}
+<div class="content-section">
+  <section class="hero is-dark is-gradient">
+    <div class="hero-body">
+      <div class="container">
+        <h1> All tracks </h1>
+        {{!-- <h2 class="subtitle">Search results for: {{tracks.0.city}}</h2> --}}
+      </div>
     </div>
-  </div>
-</section>
-<h2><span class="tag is-info is-light is-large"><strong>Search results for: {{tracks.0.city}}</strong></span></h2>
-<br>
-<br>
-<div class="table-container">
-
-  <table class="center table is-hoverable">
+  </section>
+  <h2><span class="tag is-info is-light is-large"><strong>Search results for: {{tracks.0.city}}</strong></span></h2>
+  <br>
+  <br>
+  <table class="center table is-bordered is-hoverable">
     <thead>
       <tr>
         <th>Track Name</th>
@@ -32,12 +30,12 @@
         <td>{{address}}</td>
         <td>{{city}}</td>
         <td>{{details}}</td>
-        <td><a href="/tracks/{{id}}/edit"> <button class="button is-small is-warning">
+        <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-warning">
               <i class="fas fa-edit"></i></a>
-          </button> <button class="button is-small is-danger delete-track" data-id="{{id}}">
+          </button> <button class="button is-medium is-danger delete-track" data-id="{{id}}">
             <i class="fas fa-trash"></i>
           </button>
-          <button class="button is-small is-success track-directions" data-address="{{address}}" data-city="{{city}}"
+          <button class="button is-medium is-success track-directions" data-address="{{address}}" data-city="{{city}}"
             data-state="{{state}}">
             <i class="fas fa-map-marked"></i>
           </button>
@@ -47,5 +45,4 @@
     </tbody>
   </table>
 </div>
-
 {{> footer}}
