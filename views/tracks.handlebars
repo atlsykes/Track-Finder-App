@@ -11,38 +11,39 @@
   <h2><span class="tag is-info is-light is-large"><strong>Search results for: {{tracks.0.city}}</strong></span></h2>
   <br>
   <br>
-  <table class="center table is-bordered is-hoverable">
-    <thead>
-      <tr>
-        <th>Track Name</th>
-        <th>Track Type</th>
-        <th>Street Address</th>
-        <th>City</th>
-        <th>Availability</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each tracks}}
-      <tr>
-        <td>{{name}}</td>
-        <td>{{trackType}}</td>
-        <td>{{address}}</td>
-        <td>{{city}}</td>
-        <td>{{details}}</td>
-        <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-warning">
-              <i class="fas fa-edit"></i></a>
-          </button> <button class="button is-medium is-danger delete-track" data-id="{{id}}">
-            <i class="fas fa-trash"></i>
-          </button>
-          <button class="button is-medium is-success track-directions" data-address="{{address}}" data-city="{{city}}"
-            data-state="{{state}}">
-            <i class="fas fa-map-marked"></i>
-          </button>
-        </td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
-</div>
-{{> footer}}
+  <div class="table-container">
+    <table class="center table is-bordered is-hoverable">
+      <thead>
+        <tr>
+          <th>Track Name</th>
+          <th>Track Type</th>
+          <th>Street Address</th>
+          <th>City</th>
+          <th>Availability</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each tracks}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{trackType}}</td>
+          <td>{{address}}</td>
+          <td>{{city}}</td>
+          <td>{{details}}</td>
+          <td><a href="/tracks/{{id}}/edit"> <button class="button is-medium is-warning">
+                <i class="fas fa-edit"></i></a>
+            </button> <button class="button is-medium is-danger delete-track" data-id="{{id}}">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="button is-medium is-success track-directions" data-address="{{address}}" data-city="{{city}}"
+              data-state="{{state}}">
+              <i class="fas fa-map-marked"></i>
+            </button>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{> footer}}
