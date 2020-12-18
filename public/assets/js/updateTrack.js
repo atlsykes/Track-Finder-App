@@ -22,7 +22,7 @@ $(document).ready(function () {
       console.log(response);
       window.location.replace("/tracks/" + city + "/view");
     }).fail(err => {
-      alert("Error!");
+      alert("Error! Please enter correct values for each input!");
     })
   });
 });
