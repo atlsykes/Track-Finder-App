@@ -34,6 +34,9 @@ $(document).ready(function () {
       },
     }).then((response) => {
       window.location.replace(`/tracks/${city}/view`);
+    }).fail(err => {
+      alert("Error! Please enter correct values for each input!");
+
     });
-  });
+  })
 });
