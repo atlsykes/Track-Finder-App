@@ -1,9 +1,8 @@
 # Track-Finder-App
 
-![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
-<img src="https://bulma.io/images/made-with-bulma.png" alt="bulma badge" width="100" height="21">
+![license badge](https://img.shields.io/badge/license-MIT-brightgreen) <img src="https://bulma.io/images/made-with-bulma.png" alt="bulma badge" width="100" height="21">
 
-< APP SCREENSHOT GOES HERE!!! >
+![app screenshot](./public/assets/images/Track-finder-screenshot.png)
 
 Fullstack web app that allows runners to locate, look up availability, edit, add, and delete running tracks in their city. Tech stack includes: HTML, CSS, JS, Jquery, Bulma CDN, Node.js, Express, Sequelize and Express Handlebars for ORM/MVC, MySQL dB, and Heroku (for cloud hosting).
     
