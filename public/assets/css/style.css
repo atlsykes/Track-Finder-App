@@ -63,15 +63,11 @@ label {
 }
 
 /* button to add track on add-track.handlebars */
-#add-track {
-  /* float: left; */
-  background-color: purple;
-  color: whitesmoke;
-  border-radius: 12px;
-  font-family: "Libre Baskerville", serif;
-  font-size: 20px;
-  padding: 10px;
-  margin: 20px;
+#save-new-track-div {
+  margin: 50px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
 }
 
 .add-track-div {
